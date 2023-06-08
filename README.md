@@ -3,7 +3,8 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
 
 ## Demo
-![paginationapp](https://github.com/chunkityip/pagination/assets/47329780/c89229a0-68b2-4419-9d8d-ca40ca5d018e)
+![paginationapp](https://github.com/chunkityip/paginationapp/assets/47329780/1ed6d208-80e5-49e9-ba1a-ce0662bea89e)
+
 
 
 ## Development server
