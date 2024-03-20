@@ -43,6 +43,9 @@ export class AppComponent implements OnInit {
   }
 
 
+  //gotToPage and are goToNextOrPreviousPage responsible for navigating to a specific page or moving to the next/previous page.
+  //They utilize the UserService to fetch user data and update the usersState$ Observable according
+
   gotToPage(name?: string, pageNumber: number = 0): void {
     this.usersState$ = this.userSevice.users$(name, pageNumber).pipe(
       map((response: ApiResponse<Page>) => {

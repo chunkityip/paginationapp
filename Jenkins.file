@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Install Dependencies') {
+            steps {
+                // Check out the source code from the GitHub repository
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/chunkityip/paginationapp-frontend']])
+                
+                bat 'npm install'
+            }
+        }
+
+        stage('Build Angular App') {
+            steps {
+                // Build the Angular app
+                bat 'npm run build'
+            }
+        }
+    }
+}
